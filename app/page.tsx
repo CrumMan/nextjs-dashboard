@@ -4,6 +4,11 @@ import Link from 'next/link';
 import styles from '@/app/ui/home.module.css'; 
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 export default function Page() {
   return (
@@ -37,7 +42,7 @@ export default function Page() {
         className="hidden md:block"
         alt="Screenshots of the dashboard project showing desktop version"
        />
-        <img src="/hero-mobile.png" width={560} height={620} className='block md:hidden' alt="" />
+        <img src="/hero-mobile.png" width={560} height={620} className='block md:hidden' alt="Hero Mobile" />
         </div>
       </div>
     </main>
